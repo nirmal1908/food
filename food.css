@@ -1,0 +1,234 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(167, 100%, 26%); /* whole page color */
+}
+  
+  
+  header {
+    background-color: hsl(15, 87%, 47%);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    height: 200px;
+    border-bottom: 10px solid rgb(224, 216, 216);  
+  }
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none; 
+
+  }
+  
+  h1{
+    color:hsl(121, 93%, 47%);
+    font-size:30px;
+    line-height:50px;
+    
+       text-shadow 0 0 5px #2ccb08, 0 0 15px #0fd834, 0 0 20px #07e06c, 0 0 40px #ffa500, 0 0 60px #bfd11d, 0 0 10px #ff8d00, 0 0 98px hsl(111, 91%, 45%);
+       color: #fff6a9;
+       color:rgb(5, 245, 45);
+       font-family: "Sacramento", cursive;
+  }
+  .placeholder{
+    font-size:30px;
+    line-height:50px;
+    color:rgb(5, 245, 45);
+    font-family: "Sacramento", cursive;
+
+  }
+
+h2{
+  color:rgb(255, 255, 255);
+  font-size:30px;
+  line-height:50px;
+  
+     text-shadow 0 0 5px #2ccb08, 0 0 15px #0fd834, 0 0 20px #07e06c, 0 0 40px #ffa500, 0 0 60px #bfd11d, 0 0 10px #ff8d00, 0 0 98px hsl(111, 91%, 45%);
+     color: #fff6a9;
+     color:#fdfffe;
+     font-family: "Sacramento", cursive;
+
+}
+p{
+  color:rgb(195, 19, 19);
+  font-size:20px;
+  line-height:50px;
+  
+     text-shadow 0 0 5px #2ccb08, 0 0 15px #0fd834, 0 0 20px #07e06c, 0 0 40px #ffa500, 0 0 60px #bfd11d, 0 0 10px #ff8d00, 0 0 98px hsl(111, 91%, 45%);
+     color: #fff6a9;
+     color:#da2313;
+     font-family: "Sacramento", cursive;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #fff; /* Border color for the search input */
+  border-radius: 5px; /* Rounded corners for the input */
+}
+  
+  .logo-container {
+  max-width: 100px; /* Adjust the maximum width of the logo container */
+  border: 2px solid hsl(0, 96%, 48%);
+  padding: 50px;
+  border-radius: 150px; 
+}
+.logo-container img {
+  width: 100px;
+  max-height: 100px;
+  padding: 5px;
+  object-fit: cover;
+  border-radius: 200px;
+
+}
+
+
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .menu-item {
+   
+   
+    display: inline-block;/* Display items in the same line */
+    border-radius: 30px;
+   
+   
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 5px solid #e14c0c;
+    padding: 5px;
+   
+    margin-bottom: 20px;
+    background-color: rgb(215, 212, 126); 
+    box-sizing: border-box;
+    width: calc(30% - 50px);  /* add food items in same line */
+   
+    position: relative;
+    margin-left: 300px;
+ 
+    transition: transform .5s;
+    transition: border-color 0.3s;
+    transition: box-shadow 0.3s;
+
+  }
+  .menu-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 60px;
+    transition: transform .5s;
+
+  }
+  .menu-item:hover {
+    transform: scale(1); /* Scale up by 10% on hover */
+    border-color: green;    /* Change  food border color green */
+    box-shadow:  0 0 15px #d709094d;w
+  }  
+  
+  .menu-item:hover img {
+    transform: scale(1); /* Scale up the image by 10% on hover */
+  } 
+
+  
+  
+  button {
+    border: 5px solid black;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #3bd200;
+    color: hwb(0 98% 0%);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* increase button text */
+    animation glow 1s ease-in-out infinite alternate; /* Glowing text in buy now button */
+    position:absolute;
+    bottom: 10px;
+    left: 30%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    border-radius: 10px;
+
+}
+
+.button:hover {
+  transform: scale(1); /* Scale up by 10% on hover */
+  border-color: green;    /* Change  food border color green */
+  background-color:black;
+}
+.add-to-cart-btn {
+    position:absolute;
+    bottom: 10px;
+    left: 70%;
+ 
+}
+
+.order-btn,
+.add-to-cart-btn {
+  display: block; /* Display buttons as block elements */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #de2307; /* Lighter orange glow */
+  }
+  to {
+    text-shadow: 0 0 20px #fc3f0b, 0 0 30px #ec2409, 0 0 40px #f30b0b; /* Darker orange glows */
+  }
+}
+  
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-top: 10px solid white;
+  }
+  .social-icons{
+margin-bottom: 10px;
+  }
+  .social-icon {
+    color: rgb(237, 12, 12);
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+
+  
+  
